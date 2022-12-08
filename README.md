@@ -22,5 +22,11 @@ Different statistical model are implemented in the GAPIT package. Simpler model 
 **analysis5** uses the FarmCPU model that include a triming step to remove marker in high LD with an associated marker. Iterative steps are performed to only keep the marker with the highest association and removing the ones in LD until no markers can be removed. 
 This model is computing intensive when lots of individuals are present.
 
+## rMVP
+
+This R package allow you to perform GWAS analysis and implement three statistical model: General Linear Model (GLM), Mixed Linear Model (MLM) and FarmCPU.
+As GAPIT you can input your genotype dataset in a hapmap format and your phenotypes in a text file where the first column is your Taxa and following ones are your phenotypes. The first step is to import your data using the first block of codes ```MVP.Data```. Then is to run the GWAS analysis, the FarmCPU is used in this example.
+rMVP produces descriptive figures such as a phenotype histogram, a SNP-density plot, a PCA plot (2D and 3D), a Manhattan circular plot and a rectangular one showing association of individual SNPs according to a LOD score and a QQ plot showing a graphical representation of the deviation of P-value from the null hypothesis.   
+
 
 
